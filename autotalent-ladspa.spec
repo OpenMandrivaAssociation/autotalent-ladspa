@@ -35,3 +35,11 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(-, root, root, -)
 %{_libdir}/ladspa/autotalent.so
+
+
+%changelog
+* Thu Jul 15 2010 Frank Kober <emuse@mandriva.org> 0.2-1mdv2011.0
++ Revision: 553528
+- import autotalent-ladspa
+
+
