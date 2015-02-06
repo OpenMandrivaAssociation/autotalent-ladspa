@@ -4,7 +4,7 @@ Summary:	Singer pitch correction LADSPA Plugin
 Name:		autotalent-ladspa
 Group:		Sound
 Version:	0.2
-Release:	2
+Release:	3
 License:	GPLv2+
 Url:		http://tombaran.info/autotalent.html
 Source0:	http://tombaran.info/autotalent-%{version}.tar.gz
