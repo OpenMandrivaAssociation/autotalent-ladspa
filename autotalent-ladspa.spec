@@ -6,7 +6,7 @@ Group:		Sound
 Version:	0.2
 Release:	3
 License:	GPLv2+
-Url:		http://tombaran.info/autotalent.html
+Url:		https://tombaran.info/autotalent.html
 Source0:	http://tombaran.info/autotalent-%{version}.tar.gz
 Patch0:		autotalent-0.2-makefile.patch
 
