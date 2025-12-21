@@ -10,6 +10,7 @@ Url:		https://tombaran.info/autotalent.html
 Source0:	http://tombaran.info/autotalent-%{version}.tar.gz
 Patch0:		autotalent-0.2-makefile.patch
 
+BuildRequires:	make
 %description
 Automatic pitch correction module for singers as LADSPA plugin.
 You specify the notes that a singer is allowed to hit, and Autotalent 
