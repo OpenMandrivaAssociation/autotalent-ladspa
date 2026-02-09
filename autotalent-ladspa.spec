@@ -1,4 +1,4 @@
-%define _disable_ld_no_undefined 1
+%global _disable_ld_no_undefined 1
 
 Summary:	Singer pitch correction LADSPA Plugin
 Name:		autotalent-ladspa
@@ -6,11 +6,11 @@ Group:		Sound
 Version:	0.2
 Release:	3
 License:	GPLv2+
-Url:		https://tombaran.info/autotalent.html
+Url:		http://tombaran.info/autotalent.html
 Source0:	http://tombaran.info/autotalent-%{version}.tar.gz
 Patch0:		autotalent-0.2-makefile.patch
-
 BuildRequires:	make
+
 %description
 Automatic pitch correction module for singers as LADSPA plugin.
 You specify the notes that a singer is allowed to hit, and Autotalent 
@@ -27,12 +27,13 @@ melody between major and minor or to change the musical mode.
 #----------------------------------------------------------------------------
 
 %prep
-%setup -q -n autotalent-%{version}
-%patch0 -p1
+%autosetup -p1 -n autotalent-%{version}
+
 
 %build
 %setup_compile_flags
 %make
+
 
 %install
 install -d %{buildroot}%{_libdir}/ladspa
